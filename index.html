@@ -1,361 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emediong Haven Hotel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven Hotel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">EMEDIONG <span>Haven</span></a>
-               
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#rooms">Rooms</a></li>
-                    <li><a href="#amenities">Amenities</a></li>
-                    <li><a href="#dining">Dining</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="book-now">Book Now</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <div class="nav-header">
+            <div>
+              <a href="#" class="logo">Haven</a>
+            </div>
+            <div class="menu">
+              <i class="fas fa-bars" id="menu-btn"></i>
+            </div>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <li><a href="#" class="btn" id="book-btn">Book Now</a></li>
+          </ul>
+           
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Experience Luxury & Comfort</h1>
-                <p>Your perfect getaway starts here at Luxury Haven Hotel, where every detail is crafted for your relaxation.</p>
-                <a href="#" class="btn">Book Your Stay</a>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Experience Luxury & Comfort</h1>
+          <p>
+            Your perfect getaway starts here at Luxury Haven Hotel, where every
+            detail is crafted for your relaxation.
+          </p>
+          <a href="#" class="btn">Book Your Stay</a>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about">
-        <div class="container">
-            <h2>Welcome to EMEDIONG Haven</h2>
-            <p>Nestled in the heart of the city, Luxury Haven Hotel offers an unparalleled experience of comfort and elegance. Our rich history of hospitality ensures your stay will be memorable.</p>
-            
-            <div class="usp">
-                <div class="usp-item">
-                    <i class="fas fa-concierge-bell"></i>
-                    <h3>24/7 Concierge</h3>
-                    <p>Always at your service</p>
-                </div>
+      <div class="container">
+        <h2>Welcome to EMEDIONG Haven</h2>
+        <p>
+          Nestled in the heart of the city, Luxury Haven Hotel offers an
+          unparalleled experience of comfort and elegance. Our rich history of
+          hospitality ensures your stay will be memorable.
+        </p>
 
-                <div class="usp-item">
-                    <i class="fas fa-spa"></i>
-                    <h3>Award-Winning Spa</h3>
-                    <p>Rejuvenate your senses</p>
-                </div>
+        <div class="usp">
+          <div class="usp-item">
+            <i class="fas fa-concierge-bell"></i>
+            <h3>24/7 Concierge</h3>
+            <p>Always at your service</p>
+          </div>
 
-                <div class="usp-item">
-                    <i class="fas fa-wifi"></i>
-                    <h3>Free Wi-Fi</h3>
-                    <p>Stay connected</p>
-                </div>
-            </div>
+          <div class="usp-item">
+            <i class="fas fa-spa"></i>
+            <h3>Award-Winning Spa</h3>
+            <p>Rejuvenate your senses</p>
+          </div>
+
+          <div class="usp-item">
+            <i class="fas fa-wifi"></i>
+            <h3>Free Wi-Fi</h3>
+            <p>Stay connected</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Rooms Section -->
     <section id="rooms" class="rooms">
-        <div class="container">
-            <h2>Our Accommodations</h2>
-            <p>Choose from our exquisite selection of rooms and suites designed for your comfort.</p>
-            
-            <div class="room-controls">
-                <div class="search-box">
-                    <input type="text" id="room-search" placeholder="Search rooms... ">
-                    <i class="fas fa-search"></i> 
-                </div>
-                <select id="room-type">
-                    <option value="all">All Room Types</option>
-                    <option value="standard">Standard</option>
-                    <option value="premium">Premium</option>
-                    <option value="suite">Suites</option>
-                </select>
-            </div>
-            
-            <div class="room-grid">
-                <div class="room-card" data-type="standard">
-                    <div class="room-img">
-                        <img src="" alt="Deluxe Room">
-                    </div>
-                    <div class="room-info">
-                        <h3>Deluxe Room</h3>
-                        <p>Spacious room with a king-sized bed and city views.</p>
-                        <div class="price">From $199/night</div>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-                
-                <div class="room-card" data-type="premium">
-                    <div class="room-img">
-                        <img src="https://www.pexels.com/search/hotel%20room/"  alt="Ocean View Suite">
-                    </div>
-                    <div class="room-info">
-                        <h3>Ocean View Suite</h3>
-                        <p>Luxurious suite with private balcony and sea view.</p>
-                        <div class="price">From $349/night</div>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-                
-                <div class="room-card" data-type="suite">
-                    <div class="room-img">
-                        <img src="https://unsplash.com/s/photos/hotel-room">
-                    </div>
-                    <div class="room-info">
-                        <h3>Presidential Suite</h3>
-                        <p>Ultimate luxury with separate living area and butler service.</p>
-                        <div class="price">From $599/night</div>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Our Accommodations</h2>
+        <p>
+          Choose from our exquisite selection of rooms and suites designed for
+          your comfort.
+        </p>
+
+        <div class="room-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="room-search"
+              placeholder="Search rooms... "
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <select id="room-type">
+            <option value="all">All Room Types</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+            <option value="suite">Suites</option>
+          </select>
         </div>
+
+        <div class="room-grid">
+          <div class="room-card" data-type="standard">
+            <div class="room-img">
+              <img src="/assets/bedroom2.jpg" alt="Deluxe Room" />
+            </div>
+            <div class="room-info">
+              <h3>Deluxe Room</h3>
+              <p>Spacious room with a king-sized bed and city views.</p>
+              <div class="price">From $199/night</div>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="room-card" data-type="premium">
+            <div class="room-img">
+              <img src="/assets/pool.jpg" alt="Ocean View Suite" />
+            </div>
+            <div class="room-info">
+              <h3>Ocean View Suite</h3>
+              <p>Luxurious suite with private balcony and sea view.</p>
+              <div class="price">From $349/night</div>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="room-card" data-type="suite">
+            <div class="room-img">
+              <img src="/assets/bedroom.jpg" alt="Presidential Suite" />
+            </div>
+            <div class="room-info">
+              <h3>Presidential Suite</h3>
+              <p>
+                Ultimate luxury with separate living area and butler service.
+              </p>
+              <div class="price">From $599/night</div>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Amenities Section -->
     <section id="amenities" class="amenities">
-        <div class="container">
-            <h2>Unwind & Indulge</h2>
-            <p>Discover our world-class amenities designed for your relaxation and enjoyment.</p>
-            
-            <div class="amenities-grid">
-                <div class="amenity-item">
-                    <i class="fas fa-swimming-pool"></i>
-                    <h3>Infinity Pool</h3>
-                    <p>Panoramic views with poolside service</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-spa"></i>
-                    <h3>Luxury Spa</h3>
-                    <p>Signature treatments for complete relaxation</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Fitness Center</h3>
-                    <p>State-of-the-art equipment</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Gourmet Dining</h3>
-                    <p>World-class cuisine</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Unwind & Indulge</h2>
+        <p>
+          Discover our world-class amenities designed for your relaxation and
+          enjoyment.
+        </p>
+
+        <div class="amenities-grid">
+          <div class="amenity-item">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Infinity Pool</h3>
+            <p>Panoramic views with poolside service</p>
+          </div>
+          <div class="amenity-item">
+            <i class="fas fa-spa"></i>
+            <h3>Luxury Spa</h3>
+            <p>Signature treatments for complete relaxation</p>
+          </div>
+          <div class="amenity-item">
+            <i class="fas fa-dumbbell"></i>
+            <h3>Fitness Center</h3>
+            <p>State-of-the-art equipment</p>
+          </div>
+          <div class="amenity-item">
+            <i class="fas fa-utensils"></i>
+            <h3>Gourmet Dining</h3>
+            <p>World-class cuisine</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Dining Section -->
     <section id="dining" class="dining">
-        <div class="container">
-            <h2>Culinary Delights</h2>
-            <p>Experience our award-winning restaurants and bars</p>
-            
-            <div class="restaurant-card">
-                <div class="restaurant-img">
-                    <img src="/new-images/restaurant.jpg" alt="Restaurant">
-                </div>
-                <div class="restaurant-info">
-                    <h3>The Coastal Grill</h3>
-                    <p><strong>Cuisine:</strong> Mediterranean seafood</p>
-                    <p><strong>Hours:</strong> Breakfast 7-11am, Lunch 12-3pm, Dinner 6-11pm</p>
-                    <p>Our signature restaurant offers fresh seafood with panoramic ocean views. Enjoy the catch of the day prepared by our Michelin-starred chef.</p>
-                    <a href="#" class="btn">Reserve a Table</a>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Culinary Delights</h2>
+        <p>Experience our award-winning restaurants and bars</p>
+
+        <div class="restaurant-card">
+          <div class="restaurant-img">
+            <img src="/assets/resturant.jpg" alt="Restaurant" />
+          </div>
+          <div class="restaurant-info">
+            <h3>The Coastal Grill</h3>
+            <p><strong>Cuisine:</strong> Mediterranean seafood</p>
+            <p>
+              <strong>Hours:</strong> Breakfast 7-11am, Lunch 12-3pm, Dinner
+              6-11pm
+            </p>
+            <p>
+              Our signature restaurant offers fresh seafood with panoramic ocean
+              views. Enjoy the catch of the day prepared by our Michelin-starred
+              chef.
+            </p>
+            <a href="#" class="btn">Reserve a Table</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Explore Our Hotel</h2>
-            <p>Take a visual journey through Luxury Haven</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://unsplash.com/s/photos/hotel-dining" alt="Lobby">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://unsplash.com/s/photos/spa" alt="Spa">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://pixabay.com/images/search/hotel%20ocean%20view/" alt="Pool">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://www.pexels.com/search/bar/" alt="Bar">
-                </div>
-            </div>
+      <div class="container">
+        <h2>Explore Our Hotel</h2>
+        <p>Take a visual journey through Luxury Haven</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/assets/lobby.jpg" alt="Lobby" />
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/spa.jpg" alt="Spa" />
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/pool2.jpg" alt="Pool" />
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/bar.jpg" alt="Bar" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="container">
-            <h2>What Our Guests Say</h2>
-            <p>Don't just take our word for it - hear from our satisfied guests.</p>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"The service was impeccable and the room was stunning. Will definitely return!"</p>
-                    <div class="author">- Sarah Johnson</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Best hotel experience I've ever had. The spa treatments were heavenly."</p>
-                    <div class="author">- Michael Chen</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p>"Perfect location, amazing staff, and the most comfortable bed I've ever slept in."</p>
-                    <div class="author">- Emily Rodriguez</div>
-                </div>
+      <div class="container">
+        <h2>What Our Guests Say</h2>
+        <p>Don't just take our word for it - hear from our satisfied guests.</p>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+            <p>
+              "The service was impeccable and the room was stunning. Will
+              definitely return!"
+            </p>
+            <div class="author">- Sarah Johnson</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Best hotel experience I've ever had. The spa treatments were
+              heavenly."
+            </p>
+            <div class="author">- Michael Chen</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>
+              "Perfect location, amazing staff, and the most comfortable bed
+              I've ever slept in."
+            </p>
+            <div class="author">- Emily Rodriguez</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Find Us</h2>
-            <p>We'd love to hear from you. Reach out for reservations or inquiries.</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Coastal City, CC 90210</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@luxuryhaven.com</p>
-                    
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                    </div>
-                </div>
-                
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179035!2d-73.9878449245255!3d40.75798597138952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1689876423581!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+      <div class="container">
+        <h2>Find Us</h2>
+        <p>
+          We'd love to hear from you. Reach out for reservations or inquiries.
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Coastal
+              City, CC 90210
+            </p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@luxuryhaven.com</p>
+
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-tripadvisor"></i></a>
             </div>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179035!2d-73.9878449245255!3d40.75798597138952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1689876423581!5m2!1sen!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Emediong Haven</h3>
-                    <p>Experience the pinnacle of hospitality and comfort at our award-winning hotel.</p>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#rooms">Rooms</a></li>
-                        <li><a href="#amenities">Amenities</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe for special offers and updates.</p>
-                    <input type="email" placeholder="Your Email">
-                    <button class="btn">Subscribe</button>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Emediong Haven Hotel. All Rights Reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Emediong Haven</h3>
+            <p>
+              Experience the pinnacle of hospitality and comfort at our
+              award-winning hotel.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#amenities">Amenities</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cancellation Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe for special offers and updates.</p>
+            <input type="email" placeholder="Your Email" />
+            <button class="btn">Subscribe</button>
+          </div>
         </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 Emediong Haven Hotel. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Booking Modal -->
     <div class="modal-overlay" id="booking-modal">
-        <div class="modal">
-            <button class="close-btn" id="close-modal"><i class="fas fa-times"></i></button>
-            <h2 id="modal-title">Book Your Stay</h2>
-            <form id="booking-form">
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt"></i> Check In</label>
-                        <input type="date" id="check-in" required>
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-calendar-alt"></i> Check Out</label>
-                        <input type="date" id="check-out" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-user"></i> Guests</label>
-                    <select id="guests">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Special Requests</label>
-                    <textarea id="requests"></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Confirm Booking</button>
-            </form>
-        </div>
+      <div class="modal">
+        <button class="close-btn" id="close-modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 id="modal-title">Book Your Stay</h2>
+        <form id="booking-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-calendar-alt"></i> Check In</label>
+              <input type="date" id="check-in" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-calendar-alt"></i> Check Out</label>
+              <input type="date" id="check-out" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-user"></i> Guests</label>
+            <select id="guests">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Special Requests</label>
+            <textarea id="requests"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
